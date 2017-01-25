@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Hi-res Animals</title>
+        
+    
+        <style>
+            div.blur-img-container {
+                position: relative;
+                padding: 0 !important;
+            }
+
+            div.blur-imgs-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            div.blur-img-container img {
+                width: 100%;
+            }
+
+            img.sharp {
+                opacity: 0;
+            }
+
+            img.sharp.loaded {
+                animation: fadeIn 2s;
+                animation-fill-mode: both;
+            }
+
+            img.preview {
+                position: absolute;
+                transition: height .5s, width .5s;
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <script>
+            function onImgLoad(img) {
+                var blurSibling = img.parentElement.children[0];
+                var bb = img.getBoundingClientRect();
+                blurSibling.style.height = bb.height + 'px';
+                blurSibling.style.width = bb.width + 'px';
+                img.classList.add('loaded');
+                setTimeout(()=>{img.parentNode.children[0].remove()}, 2000);
+            }
+        </script>
+        </head>
+    <body style="padding: 10px; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start;">
+        <!-- If on a slow internet connection, remove the first image, as it will take long to download due to its large size. -->
+        
+                    <div class="blur-img-container" style="padding: 5px; width: 30%; height: auto;">
+                        <div class="blur-imgs-wrap">
+                            <img class="preview" src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgUH/8QAIxAAAgAFAwUBAAAAAAAAAAAAAQIAAwQRIQUHEgYTIjGRgf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAXEQEBAQEAAAAAAAAAAAAAAAABAEEh/9oADAMBAAIRAxEAPwC3uD36LX6xFqAkhSW4iZcZ8jcfYVJuD0wlLJWZ04zOqKGN1ybQtx5sy2upzbh3h43xkC+PwfBGZH2YGg5Kzt//2Q==">
+                            <img class="sharp" onload="onImgLoad(this)" src="https://melaniekillingervowell.files.wordpress.com/2011/11/lion-wild-animal-sanctuary.jpeg">
+                            
+                        </div>
+                    </div>
+        
+                    <div class="blur-img-container" style="padding: 5px; width: 30%; height: auto;">
+                        <div class="blur-imgs-wrap">
+                            <img class="preview" src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAHxAAAgAGAwEAAAAAAAAAAAAAAQIAAwUREhMUIUEx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwb/xAAZEQACAwEAAAAAAAAAAAAAAAACIQABA0H/2gAMAwEAAhEDEQA/ANBVqtxZeSbTobLEmwf50ffYla+kxQ4kuAwuBcdQhEfiAlm67GFi5//Z">
+                            <img class="sharp" onload="onImgLoad(this)" src="http://kingofwallpapers.com/animal/animal-021.jpg">
+                            
+                        </div>
+                    </div>
+        
+                    <div class="blur-img-container" style="padding: 5px; width: 30%; height: auto;">
+                        <div class="blur-imgs-wrap">
+                            <img class="preview" src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIEAAMRBRMxQRUhYf/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAHBEAAQMFAAAAAAAAAAAAAAAAAQACkQMEERIy/9oADAMBAAIRAxEAPwDUSS9gQG0axGUoW3VvAsrZA5Bz2OvtUH1WMXY+NiDJ4C+qUqNfdVgezKZDGAY1EL//2Q==">
+                            <img class="sharp" onload="onImgLoad(this)" src="https://www.scienceabc.com/wp-content/uploads/2016/05/horse-running.jpg">
+                            
+                        </div>
+                    </div>
+    </body>
+</html>

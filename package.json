@@ -1,14 +1,30 @@
 {
   "name": "blur-preview-inliner",
   "version": "1.0.0",
-  "description": "Tool to process HTML files which replaces img tags with an inlined, low resolution blurred preview image which is shown instantly and fades away once the higher resolution image had finished loading.",
+  "description": "Tool for process HTML files to replace img tags with an inlined, low resolution, blurred preview image which is shown instantly and fades away once the higher resolution image had finished loading.",
   "main": "index.js",
+  "bin": {
+    "bpi": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redpandatronicsuk/blur-preview-inliner.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "html",
+    "blur",
+    "preview",
+    "node"
+  ],
+  "author": "RedPandaTronics LTD",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redpandatronicsuk/blur-preview-inliner/issues"
+  },
+  "homepage": "https://github.com/redpandatronicsuk/blur-preview-inliner#readme",
   "dependencies": {
     "cheerio": "^0.22.0",
     "juice": "^4.0.0",
