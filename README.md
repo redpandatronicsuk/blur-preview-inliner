@@ -13,8 +13,7 @@ Tool for process HTML files to replace img tags with an inlined, low resolution,
 <div style="padding: 5px; width: 30%; height: auto; position: relative; padding: 0 !important;">
     <div style="display: flex; align-items: center; justify-content: center;">
         <img style="position: absolute; transition: height .5s, width .5s;" src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgUH/8QAIxAAAgAFAwUBAAAAAAAAAAAAAQIAAwQRIQUHEgYTIjGRgf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAXEQEBAQEAAAAAAAAAAAAAAAABAEEh/9oADAMBAAIRAxEAPwC3uD36LX6xFqAkhSW4iZcZ8jcfYVJuD0wlLJWZ04zOqKGN1ybQtx5sy2upzbh3h43xkC+PwfBGZH2YGg5Kzt//2Q==">
-        <img style="opacity: 0; transition: 1s;" onload="onImgLoad(this)" src="https://melaniekillingervowell.files.wordpress.com/2011/11/lion-wild-animal-sanctuary.jpeg">
-        
+        <img style="opacity: 0; transition: 1s;" onload="onImgLoad(this)" src="https://melaniekillingervowell.files.wordpress.com/2011/11/lion-wild-animal-sanctuary.jpeg"> 
     </div>
 </div>
 
