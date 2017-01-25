@@ -2,7 +2,7 @@
 Tool for process HTML files to replace img tags with an inlined, low resolution, blurred preview image which is shown instantly and fades away once the higher resolution image had finished loading.
 
 ## Example
-![With and without blur preview](https://github.com/redpandatronicsuk/blur-preview-inliner/raw/master/stuff/blur-preview.mov-10-320.gif)
+![With and without blur preview](https://github.com/redpandatronicsuk/blur-preview-inliner/raw/master/example/blur-preview.mov-10-320.gif)
 
 ## Installation
 You need to have Node installed to use blur-preview-inliner. If you haven't already installed it, I recommend using [NVM](https://github.com/creationix/nvm) for Macs and Linux and [NVM-Windows](https://github.com/coreybutler/nvm-windows) or [Nodist](https://github.com/marcelklehr/nodist) for Windows.
