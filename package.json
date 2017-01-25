@@ -1,0 +1,18 @@
+{
+  "name": "blur-preview-inliner",
+  "version": "1.0.0",
+  "description": "Tool to process HTML files which replaces img tags with an inlined, low resolution blurred preview image which is shown instantly and fades away once the higher resolution image had finished loading.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "juice": "^4.0.0",
+    "request": "^2.79.0",
+    "sharp": "^0.16.2"
+  }
+}
