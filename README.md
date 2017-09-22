@@ -1,4 +1,6 @@
 # blur-preview-inliner
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/redpandatronicsuk/blur-preview-inliner.svg)](https://greenkeeper.io/)
 Tool for process HTML files to replace img tags with an inlined, low resolution, blurred preview image which is shown instantly and fades away once the higher resolution image had finished loading.
 
 ## Example
